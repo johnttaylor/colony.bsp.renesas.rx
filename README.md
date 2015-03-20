@@ -7,4 +7,4 @@ Documentation is located in the top/ directory and/or availabe at: www.integerfo
 
 To build/use Colony.Bsp within the Outcast model - see the installation instrucation at: www.integerfox.com/outcast/start_here.html#Installing
 
-The code within Colony.Bsp.Renesas.Rx reposiotry is very MANY sources - each with it own licesning.  Code develop specifcally for the Colony.Core BSP paradigm is licensed with a BSD licensing agreement (see the top/ directory).
+The code within Colony.Bsp.Renesas.Rx repository is from very MANY sources - each with it own licensing. Code develop specifically for the Colony.Core BSP paradigm is licensed with a BSD licensing agreement (see the top/ directory).
