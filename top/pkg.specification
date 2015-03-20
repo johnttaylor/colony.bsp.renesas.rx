@@ -1,0 +1,19 @@
+[info]
+name = colony.bsp.renesas.rx
+branch = main
+version = 0.0.0
+pubtime = 0
+pubtimelocal = 0
+desc = Colony.Bsp package is part of the Colony.* eco system and provides a collection of Board Support Packages - for Renesas RX microcontroller based boards - that support the Colony.Core root level BSP interaces.
+owner = John Taylor
+email = John.T.Taylor@gmail.com
+url = www.integerfox.com/colony.bsp.renesas.rx
+
+[immediate_deps]
+
+[weak_deps]
+nqbp\\1.0.6
+freertos\\8.2.0
+
+[transitive_deps]
+

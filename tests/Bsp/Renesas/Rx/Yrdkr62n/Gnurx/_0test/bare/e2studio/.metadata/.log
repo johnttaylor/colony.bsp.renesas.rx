@@ -1,0 +1,276 @@
+!SESSION 2015-03-19 20:21:13.573 -----------------------------------------------
+eclipse.buildId=v3.1.3.06
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\_workspaces\zoe\colony.bsp\tests\Bsp\Renesas\Rx\Yrdkr62n\Gnurx\_0test\bare\e2studio
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:26.178
+!MESSAGE NLS missing message: UpdateManager_9 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:26.178
+!MESSAGE NLS missing message: UpdateManager_10 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:26.178
+!MESSAGE NLS missing message: UpdateManager_Name_0 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:26.178
+!MESSAGE NLS missing message: UpdateManager_Name_6 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:35.469
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_0 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:35.469
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_1 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:35.750
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.0 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:35.750
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.1 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.749
+!MESSAGE NLS unused message: RL78_GlobalOptionsPage.CGINFO in: com.renesas.cdt.rl78.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.749
+!MESSAGE NLS unused message: RL78_GlobalOptionsPage.INSTALL_CG in: com.renesas.cdt.rl78.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.749
+!MESSAGE NLS unused message: RL78_GlobalOptionsPage.CPP_PROJECT in: com.renesas.cdt.rl78.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.ADD_REG_NONE_ERR_MSG in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.ADDITIONAL_CPU in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.ADDITIONAL_CPU_LABEL in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.ALLOC_LOWER_BIT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.BITFIELD_SIGN in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.CHAR_SIGN in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.842
+!MESSAGE NLS unused message: RXC_ProjectGeneration.DOUBLE_PRECISION in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.PACK_STRUCTURES in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.PATCH_CODE in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.SIGNED in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.SPECIFY_GLOBAL_OPTIONS in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.UNSIGNED in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.USE_DYNAMIC_CAST in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.SAVE_ACC in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.USE_HEAP_MEMORY in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.USE_TRY in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.858
+!MESSAGE NLS unused message: RXC_ProjectGeneration.USE_USER_STACK in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.936
+!MESSAGE NLS unused message: RXC_ProjectGeneration.WIDTH_DIVEGENCE in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.936
+!MESSAGE NLS unused message: RXC_ProjectGeneration.DENORMALIZED_NUMBER in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.936
+!MESSAGE NLS unused message: RXC_ProjectGeneration.DESC_LABEL_TXT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.DEVICE_REPLACE_PATTERN in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.DUPLICATE_REG_ERR_MSG in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.ENUM_SIZE_SMALLEST in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.FAST_INTRPT_REGISTER in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.GEN_SUPPORTING_FILES in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.GENERATE_HW_SETUP in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.GLOBAL_OPTIONS_SETTINGS in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.HEAP_SIZE in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.INT_SHORT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.INTERRUPT_STACK_SIZE in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.951
+!MESSAGE NLS unused message: RXC_ProjectGeneration.IO_REG_DEF_FILES in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.STACK_AREA_DESC_TEXT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.STACK_HEAP_CONFIG in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.STACK_SIZE in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.STRING_NAME in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.TARGET_REPLACE_PATTERN in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.967
+!MESSAGE NLS unused message: RXC_ProjectGeneration.VALID_HEX_ERR_MSG in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.983
+!MESSAGE NLS unused message: RXC_ProjectGeneration.VALUE_EVEN_1 in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXC_ProjectGeneration.VALUE_EVEN_2 in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXC_ProjectGeneration.VECTOR_DEF_FILES in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXCGlobalOptionsPage.CGINFO in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXCGlobalOptionsPage.INSTALL_CG in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXCGlobalOptionsPage.CPP_PROJECT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:21:36.998
+!MESSAGE NLS unused message: RXCGlobalOptionsPage.RTOS_PROJECT in: com.renesas.cdt.rxc.template.projgeneration.wizard.messages
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-19 20:22:20.117
+!MESSAGE Indexed 'debug' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:24:40.478
+!MESSAGE NLS unused message: EventpointsView_ in: com.renesas.cdt.debug.eventpoints.messages
+
+!ENTRY org.eclipse.jface 2 0 2015-03-19 20:24:44.098
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-19 20:24:44.098
+!MESSAGE A conflict occurred for SHIFT+F7:
+Binding(SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.ui.project.buildAll,Build All,
+		Build all projects,
+		Category(org.eclipse.ui.category.project,Project,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cc3dee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.debug.ui.debugging,,,system)
+Binding(SHIFT+F7,
+	ParameterizedCommand(Command(org.eclipse.cdt.debug.ui.command.uncall,Uncall,
+		Perform Uncall,
+		Category(org.eclipse.cdt.debug.ui.category.reverseDebugging,Reverse Debugging Commands,Set of commands for Reverse Debugging,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1233a8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.debug.ui.debugging,,,system)
+
+!ENTRY com.renesas.cdt.debug.ioview.dsf 1 0 2015-03-19 20:24:44.437
+!MESSAGE Creating new Model for gdb[0].proc[1].threadGroup[i1]
+
+!ENTRY com.renesas.cdt.debug.ioview.dsf 1 0 2015-03-19 20:24:44.439
+!MESSAGE Loading Io Map: C:\Renesas\e2_studio\internal\IoFiles\RX\RX62N.sfrx
+
+!ENTRY com.renesas.cdt.debug.ioview.dsf 1 0 2015-03-19 20:25:47.239
+!MESSAGE Saving model state for session 0
+
+!ENTRY com.renesas.cdt.debug.ioview.dsf 1 0 2015-03-19 20:25:47.253
+!MESSAGE Removing model for session 0
+
+!ENTRY org.eclipse.ui 4 0 2015-03-19 20:25:47.275
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.renesas.renesasos.plugins.debug.TargetEventManager$2.run(TargetEventManager.java:200)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+!SESSION 2015-03-19 20:26:51.607 -----------------------------------------------
+eclipse.buildId=v3.1.3.06
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:26:58.425
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_0 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:26:58.425
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_1 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:26:58.846
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.0 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:26:58.846
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.1 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:27:06.989
+!MESSAGE NLS missing message: UpdateManager_9 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:27:06.989
+!MESSAGE NLS missing message: UpdateManager_10 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:27:06.989
+!MESSAGE NLS missing message: UpdateManager_Name_0 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-03-19 20:27:06.989
+!MESSAGE NLS missing message: UpdateManager_Name_6 in: com.renesas.update.manager.repositories.messages
