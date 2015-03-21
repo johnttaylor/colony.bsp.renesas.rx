@@ -7,25 +7,6 @@
 void blink( void* arg );
 void spin( void* arg );
 
-int block[20];
-int* myarray;
-
-class Foo
-{
-public:
-    virtual int dosomething( int y ) = 0;
-};
-
-class Bar: public Foo
-{
-int dosomething( int y )
-    {
-    return y*2;
-    }
-};
-
-Bar  instance;
-Foo* ptr = &instance;
 
 #define TIMER1_HZ_RATE      1000
 
@@ -82,10 +63,6 @@ int main(void)
     Bsp_GLcd_intialize();
     display_font( 0 );
 
-    //myarray = new(block) int[20];
-    myarray = new int[20];
-    myarray[2] = ptr->dosomething( 3 );
-      
     xTaskCreate( blink, "Blink", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL );
     xTaskCreate( spin, "Spin",   configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL );
 
@@ -114,8 +91,6 @@ void blink( void* arg )
 
 void spin( void* arg )
     {
-    TickType_t count;
-
     // Spin the LEDs
     for(;;)
         {
@@ -123,10 +98,8 @@ void spin( void* arg )
         int     i;
 
 
-        count = xTaskGetTickCount();
         for( m = 4; m <= 10; m++ )
             {
-            if ( count )
             Bsp_toggleCircleLED( m );
 
             for(i=0; i< 100000; i++)
