@@ -206,6 +206,38 @@ uint8_t Bsp_isButtonPressed( uint8_t buttonIndex );
 
 
 
+/// Default Mapping for the "debug LED 1"
+#ifndef OPTION_BSP_DEBUG_LED1_INDEX
+#define OPTION_BSP_DEBUG_LED1_INDEX    4
+#endif
+
+/// Default Mapping for the "debug LED 2"
+#ifndef OPTION_BSP_DEBUG_LED2_INDEX
+#define OPTION_BSP_DEBUG_LED2_INDEX    5
+#endif
+
+
+/// Generic API
+#define Bsp_Api_turnOn_debug1_MAP()             Bsp_setCircleLED( OPTION_BSP_DEBUG_LED1_INDEX, 1 )
+
+/// Generic API
+#define Bsp_Api_turnOff_debug1_MAP()            Bsp_setCircleLED( OPTION_BSP_DEBUG_LED1_INDEX, 0 )
+
+/// Generic API
+#define Bsp_Api_toggle_debug1_MAP()             Bsp_toggleCircleLED( OPTION_BSP_DEBUG_LED1_INDEX )
+
+
+/// Generic API
+#define Bsp_Api_turnOn_debug2_MAP()             Bsp_setCircleLED( OPTION_BSP_DEBUG_LED2_INDEX, 1 )
+
+/// Generic API
+#define Bsp_Api_turnOff_debug2_MAP()            Bsp_setCircleLED( OPTION_BSP_DEBUG_LED2_INDEX, 0 )
+
+/// Generic API
+#define Bsp_Api_toggle_debug2_MAP()             Bsp_toggleCircleLED( OPTION_BSP_DEBUG_LED2_INDEX )
+
+
+
 
 // END C++
 #ifdef __cplusplus

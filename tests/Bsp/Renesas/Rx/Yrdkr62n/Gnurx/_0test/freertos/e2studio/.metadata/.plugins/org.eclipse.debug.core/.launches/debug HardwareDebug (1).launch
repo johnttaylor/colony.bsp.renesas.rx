@@ -8,7 +8,7 @@
 <stringAttribute key="com.renesas.cdt.core.optionInitCommands" value=""/>
 <intAttribute key="com.renesas.cdt.core.portNumber" value="61234"/>
 <stringAttribute key="com.renesas.cdt.core.runCommands" value=""/>
-<stringAttribute key="com.renesas.cdt.core.serverParam" value="-g SEGGERJLINKRX -l 0 -t R5F562N8  -p 61234 -d 61236 -uClockSrcHoco= 0 -uInputClock= 12.0000 -uAllowClockSourceInternal= 1 -uUseFine= 0 -uJTagClockFreq= 16.5 -uRegisterSetting= 0 -uModePin= 0 -uDebugMode= 0 -uExecuteProgram= 0 -uIdCode= FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -b -n 0 -uWorkRamAddress= 3000 -uProgReWriteIRom= 0 -uProgReWriteDFlash= 0 -uhookWorkRamAddr= 0x1000 -uhookWorkRamSize= 0x230"/>
+<stringAttribute key="com.renesas.cdt.core.serverParam" value="-g SEGGERJLINKRX -l 0 -t R5F562N8  -p 61234 -d 61236 -uClockSrcHoco= 0 -uInputClock= 12.0000 -uAllowClockSourceInternal= 1 -uUseFine= 0 -uJTagClockFreq= 16.5 -uRegisterSetting= 0 -uModePin= 0 -uDebugMode= 0 -uExecuteProgram= 0 -uIdCode= FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -b -n 0 -uWorkRamAddress= 0 -uProgReWriteIRom= 0 -uProgReWriteDFlash= 0 -uhookWorkRamAddr= 0x1000 -uhookWorkRamSize= 0x230"/>
 <booleanAttribute key="com.renesas.cdt.core.startServer" value="true"/>
 <stringAttribute key="com.renesas.cdt.core.targetDevice" value="R5F562N8"/>
 <booleanAttribute key="com.renesas.cdt.core.useRemoteTarget" value="true"/>
@@ -51,11 +51,11 @@
 <booleanAttribute key="com.renesas.hardwaredebug.e1.prog_rewrite_irom" value="false"/>
 <stringAttribute key="com.renesas.hardwaredebug.e1.serial_number" value=""/>
 <intAttribute key="com.renesas.hardwaredebug.e1.timer_clock" value="0"/>
-<intAttribute key="com.renesas.hardwaredebug.e1.work_ram_start" value="12288"/>
+<intAttribute key="com.renesas.hardwaredebug.e1.work_ram_start" value="0"/>
 <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.delay" value="3"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doHalt" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="false"/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\_workspaces\zoe\colony.bsp\tests\Bsp\Renesas\Rx\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value="C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value="0"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value=""/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
@@ -66,7 +66,7 @@
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\_workspaces\zoe\colony.bsp\tests\Bsp\Renesas\Rx\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value="C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value="0"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
@@ -93,4 +93,5 @@
 <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;sourceLookupDirector&gt;&#13;&#10;&lt;sourceContainers duplicates=&quot;false&quot;&gt;&#13;&#10;&lt;container memento=&quot;AbsolutePath&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.absolutePath&quot;/&gt;&#13;&#10;&lt;/sourceContainers&gt;&#13;&#10;&lt;/sourceLookupDirector&gt;&#13;&#10;"/>
 <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;/&gt;&#13;&#10;"/>
 <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+<stringAttribute key="saved_expressions&lt;seperator&gt;Unknown" value="90,94,148"/>
 </launchConfiguration>

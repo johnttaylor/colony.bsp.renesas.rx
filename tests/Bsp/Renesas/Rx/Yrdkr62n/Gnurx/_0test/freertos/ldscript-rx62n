@@ -1,4 +1,8 @@
 OUTPUT_ARCH(rx)
+
+heap_size           = 4086;
+jlink_debugram_size = 1024;
+
 SECTIONS
 {
 	.fvectors 0xFFFFFF80 : AT (0xFFFFFF80)
@@ -85,7 +89,14 @@ SECTIONS
 	{
 		_ustack = .;
 	}
-	.data 0x00000010 : AT (_mdata)
+    .debugger_ram 0x00000000 : AT (0x00000000)
+    {
+        _debugger_ram_start = .;
+        . = . + jlink_debugram_size;
+        _debugger_rame_end = .;
+    }
+	. = ALIGN(4);
+	.data : AT (_mdata)
 	{
 		_data = .;
 		*(.data)
@@ -111,4 +122,12 @@ SECTIONS
 		_ebss = .;
 		_end = .;
 	}
+	. = ALIGN(4);
+    .heap :
+    {
+        _heap_start = .;
+        *(.heap)
+        . = . + heap_size;
+        _heap_end = .;
+    }
 }
