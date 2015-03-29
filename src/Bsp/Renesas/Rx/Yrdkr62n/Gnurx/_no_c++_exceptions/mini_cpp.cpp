@@ -24,7 +24,7 @@ void operator delete( void* p ) throw() { free(p); }
    system this function can be empty because application has no operating system 
    to return to, and consequently the static destructors are never called.
 */
-extern "C" void __cxa_atexit( void ) {}
+extern "C" int __cxa_atexit( void ) { return 0; }
 
 //extern "C" int __cxa_atexit( void* object,
 //                             void (*destructor)(void*),
