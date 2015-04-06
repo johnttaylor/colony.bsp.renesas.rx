@@ -123,7 +123,7 @@ extern "C" {
       
 /// Baudrate
 #ifndef BSP_BAUDRATE_9600
-#define BSP_BAUDRATE_9600	                38                                                               
+#define BSP_BAUDRATE_9600                   38                                                               
 #endif
 /// PCLK divider 
 #ifndef BSP_BAUDRATE_DIVIDER_9600       
@@ -132,7 +132,7 @@ extern "C" {
       
 /// Baudrate
 #ifndef BSP_BAUDRATE_19200 
-#define BSP_BAUDRATE_19200	                77                                                               
+#define BSP_BAUDRATE_19200                  77                                                               
 #endif
 /// PCLK divider 
 #ifndef BSP_BAUDRATE_DIVIDER_19200       
@@ -141,26 +141,44 @@ extern "C" {
       
 /// Baudrate
 #ifndef BSP_BAUDRATE_38400 
-#define BSP_BAUDRATE_38400	                38 
+#define BSP_BAUDRATE_38400                  38 
 #endif
 /// PCLK divider 
 #ifndef BSP_BAUDRATE_DIVIDER_38400       
 #define BSP_BAUDRATE_DIVIDER_38400          0
 #endif
       
+/// Baudrate
+#ifndef BSP_BAUDRATE_57600 
+#define BSP_BAUDRATE_57600                  25 
+#endif
+/// PCLK divider 
+#ifndef BSP_BAUDRATE_DIVIDER_57600       
+#define BSP_BAUDRATE_DIVIDER_57600          0
+#endif
+
+/// Baudrate
+#ifndef BSP_BAUDRATE_115200 
+#define BSP_BAUDRATE_115200                 12
+#endif
+/// PCLK divider 
+#ifndef BSP_BAUDRATE_DIVIDER_115200       
+#define BSP_BAUDRATE_DIVIDER_115200         0
+#endif
+
 
                                                                                                              
 /* 
 ** Parity values used in UART initialization 
 */                                                              
 /// Parity option
-#define BSP_PARITY_NONE		                BSP_SMR_PAR_DISABLE_                                              
+#define BSP_PARITY_NONE                     BSP_SMR_PAR_DISABLE_                                              
 
 /// Parity option
-#define BSP_PARITY_EVEN		                (BSP_SMR_PAR_ENABLE_|BSP_SMR_PAR_EVEN_)                            
+#define BSP_PARITY_EVEN                     (BSP_SMR_PAR_ENABLE_|BSP_SMR_PAR_EVEN_)                            
 
 /// Parity option
-#define BSP_PARITY_ODD		                (BSP_SMR_PAR_ENABLE_|BSP_SMR_PAR_ODD_)                             
+#define BSP_PARITY_ODD                      (BSP_SMR_PAR_ENABLE_|BSP_SMR_PAR_ODD_)                             
 
                                                                                                              
 
@@ -190,28 +208,28 @@ extern "C" {
 ** PRIVATE Serial mode register (SMR) bit values 
 */                                                                  
 /// SMR bit position
-#define BSP_SMR_PAR_ENABLE_		            0x20                                                          
+#define BSP_SMR_PAR_ENABLE_                 0x20                                                          
 
 /// SMR bit position
-#define BSP_SMR_PAR_DISABLE_		        0x00                                                          
+#define BSP_SMR_PAR_DISABLE_                0x00                                                          
 
 /// SMR bit position
-#define BSP_SMR_PAR_ODD_			        0x10                                                          
+#define BSP_SMR_PAR_ODD_                    0x10                                                          
 
 /// SMR bit position
-#define BSP_SMR_PAR_EVEN_		            0x00                                                          
+#define BSP_SMR_PAR_EVEN_                   0x00                                                          
 
 /// SMR bit position
-#define BSP_SMR_1_STOP_			            0x00                                                          
+#define BSP_SMR_1_STOP_                     0x00                                                          
 
 /// SMR bit position
-#define	BSP_SMR_2_STOP_			            0x08 
+#define BSP_SMR_2_STOP_                     0x08 
 
 /// SMR bit position
-#define BSP_SMR_7_CHAR_			            0x40 
+#define BSP_SMR_7_CHAR_                     0x40 
 
 /// SMR bit position
-#define BSP_SMR_8_CHAR_			            0x00                                                          
+#define BSP_SMR_8_CHAR_                     0x00                                                          
                                                                                                              
 
 /* 
@@ -231,10 +249,10 @@ extern "C" {
 #define BSP_RX_ERR_OVERRUN                  0x20                                                             
 
 /// Bit mask: RX framing error
-#define BSP_RX_ERR_FRAMING  	            0x10                                                             
+#define BSP_RX_ERR_FRAMING                  0x10                                                             
 
 /// Bit mask: RX parity error
-#define BSP_RX_ERR_PARITY  	                0x08                                                              
+#define BSP_RX_ERR_PARITY                   0x08                                                              
 
 /// Bit mask: RX errors
 #define BSP_RX_ERR_INPUT                    (BSP_RX_ERR_OVERRUN|BSP_RX_ERR_FRAMING|BSP_RX_ERR_PARITY)        
@@ -256,16 +274,16 @@ extern "C" {
              checking is VERY LIMITED, i.e. it only checks if 'sciPortID' is
              a valid ID.
  */
-uint8_t BSP_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority, uint8_t baudrate, uint8_t baudrateDivider, uint8_t frameConfig );
+uint8_t Bsp_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority, uint8_t baudrate, uint8_t baudrateDivider, uint8_t frameConfig );
 
 
 /** This method returns true (non-zero) if there is received
     character in the Receive data register. 
  
     \b Prototype:
-        uintt_t BSP_uartIsByteReceived( uint8_t sciPortID );   
+        uint8_t Bsp_uartIsByteReceived( uint8_t sciPortID );   
  */
-#define BSP_uartIsByteReceived(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE & BSP_RX_OK_RCVD_BYTE)
+#define Bsp_uartIsByteReceived(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE & BSP_RX_OK_RCVD_BYTE)
 
 
 /** This method EXPLICITY clears the receive interrupt request.  NOTE: Typically 
@@ -278,18 +296,18 @@ uint8_t BSP_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority,
              checking is VERY LIMITED, i.e. it only checks if 'sciPortID' is
              a valid ID.
  */
-uint8_t BSP_uartClrReceivedFlag( uint8_t sciPortID );
+uint8_t Bsp_uartClrReceivedFlag( uint8_t sciPortID );
 
 
 /** This method returns true (non-zero) if there is receive
     error.
  */
-#define BSP_uartIsReceiveError(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE & BSP_RX_ERR_INPUT)
+#define Bsp_uartIsReceiveError(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE & BSP_RX_ERR_INPUT)
 
 
 /** This method is used to clear all (if any) receive errors
  */
-#define BSP_uartClrReceiveError(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE &= ~BSP_RX_ERR_INPUT
+#define Bsp_uartClrReceiveError(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE &= ~BSP_RX_ERR_INPUT
 
 
 /** This method returns the received-byte status.  If there
@@ -297,25 +315,25 @@ uint8_t BSP_uartClrReceivedFlag( uint8_t sciPortID );
     byte/error occurred, then the status/error code(s) are returned.  The 
     error code(s) are returned as bit-wised OR'd values.
  */
-#define BSP_uartGetReceiveStatus(p)         (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE&(BSP_RX_OK_RCVD_BYTE|BSP_RX_ERR_INPUT))
+#define Bsp_uartGetReceiveStatus(p)         (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE&(BSP_RX_OK_RCVD_BYTE|BSP_RX_ERR_INPUT))
 
 
 /** This method returns the last byte received
  */
-#define BSP_uartGetReceivedByte(p)          BSP_SCI_INDEX_TO_INSTANCE(p).RDR
+#define Bsp_uartGetReceivedByte(p)          BSP_SCI_INDEX_TO_INSTANCE(p).RDR
 
 
 /** This method requests that the specified byte be transmitted (i.e.
     it loads the TX data register and starts the TX process) 
  */
-#define BSP_uartTransmitByte(p,b)            BSP_SCI_INDEX_TO_INSTANCE(p).TDR=(b)
+#define Bsp_uartTransmitByte(p,b)            BSP_SCI_INDEX_TO_INSTANCE(p).TDR=(b)
 
  
 /** This method returns true (non-zero) if the last requested byte 
     to be transmitted has been shifted out of the TX Data register
     into the TX Shift register.
  */
-#define BSP_uartIsTxDataEmpty(p)            (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE& BSP_TX_DATA_EMPTY)
+#define Bsp_uartIsTxDataEmpty(p)            (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BYTE& BSP_TX_DATA_EMPTY)
 
 
 /** This method EXPLICITY clears the TX data done interrupt request.  
@@ -328,92 +346,108 @@ uint8_t BSP_uartClrReceivedFlag( uint8_t sciPortID );
              checking is VERY LIMITED, i.e. it only checks if 'sciPortID' is
              a valid ID.
  */
-uint8_t BSP_uartClrTxDataEmptyFlag( uint8_t sciPortID );
+uint8_t Bsp_uartClrTxDataEmptyFlag( uint8_t sciPortID );
 
 
 /** This method returns true (non-zero) if the last bit of
     the last byte transmitted has actually been transmitted
     on the 'wire'
  */
-#define BSP_uartIsTxDone(p)                 (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BIT.TEND)   
+#define Bsp_uartIsTxDone(p)                 (BSP_SCI_INDEX_TO_INSTANCE(p).SSR.BIT.TEND)   
 
 
-/** This method enables transmit mode for the UART.  Note: If the
-    transmitter is enable AFTER the TX Interrupt Enable flag has been
-    set, a TX DATA interrupt will be generated.
+/** This method enables transmit mode for the UART.  
+    
+    Notes: 
+        1) If the transmitter is enable AFTER the TX Interrupt Enable flag has 
+           been set, a TX DATA interrupt will be generated.
+        2) The recommendation is to do NOT use this method - but use
+           Bsp_uartEnableRX_TX() instead.  This method can only be used
+           if the applicaiton ONLY transmits on the UART.
  */
-#define BSP_uartEnableTX(p)                 BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TE=1
+#define Bsp_uartEnableTX(p)                 BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TE=1
 
 
 /** This method disables transmit mode for the UART
  */
-#define BSP_uartDisableTX(p)                BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TE=0
+#define Bsp_uartDisableTX(p)                BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TE=0
 
 
-/** This method enables receive mode for the UART 
+/** This method enables receive mode for the UART.
+
+    Notes: 
+        1) The recommendation is to do NOT use this method - but use
+           Bsp_uartEnableRX_TX() instead.  This method can only be used
+           if the applicaiton ONLY receives on the UART.
  */
-#define BSP_uartEnableRX(p)                 BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RE=1      
+#define Bsp_uartEnableRX(p)                 BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RE=1      
 
 
-/** This method enables RX & TX at the same time. IF done seperately
-    the applicaiton must ensure a 'settling' period between the calls
+/** This method enables RX & TX at the same time. NOTE: The 62N effectively does not
+    allow enabling RX & TX at different times.
  */
 #define Bsp_uartEnableRX_TX(p)              BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BYTE |= 0x30
 
-   
+
 /** This method disables receive mode for the UART 
  */
-#define BSP_uartDisableRX(p)                BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RE=0  
+#define Bsp_uartDisableRX(p)                BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RE=0  
 
 
 /** This method enables the Transmit Byte Interrupt for the UART 
     (the transmit data register is empty) 
  */
-#define BSP_uartEnableTXDataIrq(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE=1      
+#define Bsp_uartEnableTXDataIrq(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE=1      
 
 
 /** This method disables the Transmit Byte Interrupt for the UART 
  */
-#define BSP_uartDisableTXDataIrq(p)         BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE=0       
+#define Bsp_uartDisableTXDataIrq(p)         BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE=0       
+
+
+/** This method return non-zero value if the Transmit Byte Done Interrupt is
+    enabled.
+ */
+#define Bsp_uartIsTXDataIrqEnabled(p)       (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE==1)
 
 
 /** This method return true (non-zero) if the Transmit Byte Interrupt
     for the UART is enabled
  */
-#define BSP_uartIsTxDataIrqEnabled(p)       (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE)      
+#define Bsp_uartIsTxDataIrqEnabled(p)       (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TIE)      
 
 
 /** This method enables the Received Byte Interrupt for the UART 
  */
-#define BSP_uartEnableRXIrq(p)              BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE=1      
+#define Bsp_uartEnableRXIrq(p)              BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE=1      
 
 
 /** This method disables the Received Byte Interrupt for the UART 
  */
-#define BSP_uartDisableRXIrq(p)             BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE=0      
+#define Bsp_uartDisableRXIrq(p)             BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE=0      
 
 
 /** This method return true (non-zero) if the Receive Byte Interrupt
     for the UART is enabled
  */
-#define BSP_uartIsRxIrqEnabled(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE)      
+#define Bsp_uartIsRxIrqEnabled(p)           (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.RIE)      
 
 
 /** This method enables the Transmit Completed Interrupt for the UART 
     (the transmit shift register is empty) 
  */
-#define BSP_uartEnableTXDoneIrq(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE=1      
+#define Bsp_uartEnableTXDoneIrq(p)          BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE=1      
 
 
 /** This method disables the Transmit Completed Interrupt for the UART 
  */
-#define BSP_uartDisableTXDoneIrq(p)         BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE=0      
+#define Bsp_uartDisableTXDoneIrq(p)         BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE=0      
 
 
 /** This method return true (non-zero) if the Transmit Completed Interrupt
     for the UART is enabled
  */
-#define BSP_uartIsTxDoneIrqEnabled(p)       (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE)      
+#define Bsp_uartIsTxDoneIrqEnabled(p)       (BSP_SCI_INDEX_TO_INSTANCE(p).SCR.BIT.TEIE)      
 
 
 

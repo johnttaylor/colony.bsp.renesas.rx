@@ -14,6 +14,7 @@
 //
 /////////////////////////
 
+
 /////////////////////////
 // Prototype for the above Vector funcitons
 
@@ -32,15 +33,16 @@ extern void vSoftwareInterruptISR( void ); // __attribute__ ((interrupt));
 #ifdef __cplusplus
 }
 #endif
+
 //
 /////////////////////////
 
-// My BSP
+/// My BSP
 #include "Bsp/Renesas/Rx/62n/Yrdkr62n/Gnurx/Api.h"
 
 
-//// strapi mapping
-//#include "Cpl/Text/_mappings/mingw/strapi.h"
+/// strapi mapping
+#include "Cpl/Text/_mappings/kpitrx/strapi.h"
 
 
 #endif

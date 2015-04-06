@@ -14,7 +14,7 @@
 
 
 /////////////////////////////////////
-uint8_t BSP_uartInitPin_( uint8_t sciPortID, uint8_t pinSelect )
+uint8_t Bsp_uartInitPin_( uint8_t sciPortID, uint8_t pinSelect )
     {
     // Properly configure RX input pin
     switch( sciPortID )

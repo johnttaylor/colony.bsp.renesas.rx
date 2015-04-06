@@ -54,21 +54,21 @@ static uint8_t rxstatus_;
 void transmit_byte( uint8_t data )
     {
     // Make sure previous byte was transmitted
-    while( !BSP_uartIsTxDataEmpty(BSP_DB9_CONSOLE) )
+    while( !Bsp_uartIsTxDataEmpty(BSP_DB9_CONSOLE) )
         ;
 
     // Transmit byte
-    BSP_uartTransmitByte(BSP_DB9_CONSOLE, data);
+    Bsp_uartTransmitByte(BSP_DB9_CONSOLE, data);
     }
     
 void poll_uart(void)
     {
-    if ( BSP_uartIsByteReceived(BSP_DB9_CONSOLE) )
+    if ( Bsp_uartIsByteReceived(BSP_DB9_CONSOLE) )
         {
-        rxbyte_   =  BSP_uartGetReceivedByte(BSP_DB9_CONSOLE);
-        rxstatus_ = BSP_uartGetReceiveStatus(BSP_DB9_CONSOLE);
-        BSP_uartClrReceivedFlag(BSP_DB9_CONSOLE);
-        BSP_uartClrReceiveError(BSP_DB9_CONSOLE);
+        rxbyte_   = Bsp_uartGetReceivedByte(BSP_DB9_CONSOLE);
+        rxstatus_ = Bsp_uartGetReceiveStatus(BSP_DB9_CONSOLE);
+        Bsp_uartClrReceivedFlag(BSP_DB9_CONSOLE);
+        Bsp_uartClrReceiveError(BSP_DB9_CONSOLE);
 
         transmit_byte( '[' );
         transmit_byte( rxbyte_ );
@@ -84,7 +84,7 @@ int main(void)
     Bsp_initCompareMatchTimer( 0, TIMER1_HZ_RATE, 0, 14 );  
     Bsp_initCompareMatchTimer( 3, TIMER2_HZ_RATE, 0, 14 );  
     
-    BSP_uartInit( BSP_DB9_CONSOLE, BSP_DB9_CONSOLE_PIN_SELECT, 4,BSP_BAUDRATE_9600, BSP_BAUDRATE_DIVIDER_9600, (BSP_PARITY_NONE|BSP_DATABITS_8|BSP_STOPBITS_1) );
+    Bsp_uartInit( BSP_DB9_CONSOLE, BSP_DB9_CONSOLE_PIN_SELECT, 4,BSP_BAUDRATE_9600, BSP_BAUDRATE_DIVIDER_9600, (BSP_PARITY_NONE|BSP_DATABITS_8|BSP_STOPBITS_1) );
     Bsp_uartEnableRX_TX( BSP_DB9_CONSOLE );
 
     Bsp_setCircleLED( 11, true );

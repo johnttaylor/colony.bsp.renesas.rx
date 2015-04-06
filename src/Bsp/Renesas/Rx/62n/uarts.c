@@ -17,7 +17,7 @@
    
 
 /////////////////////////////////////
-uint8_t BSP_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority, uint8_t baudrate, uint8_t baudrateDivider, uint8_t frameConfig )
+uint8_t Bsp_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority, uint8_t baudrate, uint8_t baudrateDivider, uint8_t frameConfig )
     {
     // Clear the Control registers 
     BSP_SCI_INDEX_TO_INSTANCE(sciPortID).SCR.BYTE      = 0;
@@ -25,7 +25,7 @@ uint8_t BSP_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority,
     BSP_SCI_INDEX_TO_INSTANCE(sciPortID).SEMR.BIT.ABCS = 0;
 
     // Config the RX Input pin (is microcontoller package specific)
-    BSP_uartInitPin_( sciPortID, pinSelect ); 
+    Bsp_uartInitPin_( sciPortID, pinSelect ); 
     
         
     // Enable the SCI Module and set IRQ priority
@@ -39,32 +39,56 @@ uint8_t BSP_uartInit( uint8_t sciPortID, uint8_t pinSelect, uint8_t irqPriority,
         case 0:
 	        MSTP( SCI0 )     = 0;             // Enable the Channel
 	        IPR( SCI0,RXI0 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI0,RXI0 ) = 1;             // Enable UART interrupts (seperate/in-addition to the setting in the SCR register)
+	        IEN( SCI0,TXI0 ) = 1;            
+	        IEN( SCI0,ERI0 ) = 1;            
+	        IEN( SCI0,TEI0 ) = 1;            
             break;
 
         case 1:
 	        MSTP( SCI1 )     = 0;             // Enable the Channel
 	        IPR( SCI1,RXI1 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI1,RXI1 ) = 1;            
+	        IEN( SCI1,TXI1 ) = 1;            
+	        IEN( SCI1,ERI1 ) = 1;            
+	        IEN( SCI1,TEI1 ) = 1;            
             break;
 
         case 2:
 	        MSTP( SCI2 )     = 0;             // Enable the Channel
 	        IPR( SCI2,RXI2 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI2,RXI2 ) = 1;            
+	        IEN( SCI2,TXI2 ) = 1;            
+	        IEN( SCI2,ERI2 ) = 1;            
+	        IEN( SCI2,TEI2 ) = 1;            
             break;
 
         case 3:
 	        MSTP( SCI3 )     = 0;             // Enable the Channel
 	        IPR( SCI3,RXI3 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI3,RXI3 ) = 1;            
+	        IEN( SCI3,TXI3 ) = 1;            
+	        IEN( SCI3,ERI3 ) = 1;            
+	        IEN( SCI3,TEI3 ) = 1;            
             break;
 
 
         case 5:
 	        MSTP( SCI5 )     = 0;             // Enable the Channel
 	        IPR( SCI5,RXI5 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI5,RXI5 ) = 1;            
+	        IEN( SCI5,TXI5 ) = 1;            
+	        IEN( SCI5,ERI5 ) = 1;            
+	        IEN( SCI5,TEI5 ) = 1;            
             break;
 
         case 6:
 	        MSTP( SCI6 )     = 0;             // Enable the Channel
 	        IPR( SCI6,RXI6 ) = irqPriority;   // Set IRQ priority (all interrupts for a SCI port have the same IRQ priority);
+	        IEN( SCI6,RXI6 ) = 1;            
+	        IEN( SCI6,TXI6 ) = 1;            
+	        IEN( SCI6,ERI6 ) = 1;            
+	        IEN( SCI6,TEI6 ) = 1;            
             break;              
         }
 
@@ -86,7 +110,7 @@ void Bsp_uartBusyWait( unsigned long delay )
     }
 
 
-uint8_t BSP_uartClrReceivedFlag( uint8_t sciPortID )
+uint8_t Bsp_uartClrReceivedFlag( uint8_t sciPortID )
     {
     switch( sciPortID )
         {
@@ -125,7 +149,7 @@ uint8_t BSP_uartClrReceivedFlag( uint8_t sciPortID )
 
 
 
-uint8_t BSP_uartClrTxDataEmptyFlag( uint8_t sciPortID )
+uint8_t Bsp_uartClrTxDataEmptyFlag( uint8_t sciPortID )
     {
     switch( sciPortID )
         {

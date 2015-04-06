@@ -652,3 +652,62 @@ Caused by: java.lang.NullPointerException
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
 	... 23 more
+!SESSION 2015-04-04 23:17:15.380 -----------------------------------------------
+eclipse.buildId=v3.1.3.06
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\62n\Yrdkr62n\Gnurx\_0test\freertos\e2studio
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:22.968
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_0 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:23.010
+!MESSAGE NLS unused message: CompilerAdvancedWarningsApplicabilityCalculator_1 in: com.renesas.cdt.managedbuilder.gnu.ui.common.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:23.565
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.0 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:23.567
+!MESSAGE NLS unused message: RxcCPUBaseAddressValueHandler.1 in: com.renesas.cdt.generic.rxc.control.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:31.592
+!MESSAGE NLS missing message: UpdateManager_9 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:31.595
+!MESSAGE NLS missing message: UpdateManager_10 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:31.597
+!MESSAGE NLS missing message: UpdateManager_Name_0 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-04-04 23:17:31.602
+!MESSAGE NLS missing message: UpdateManager_Name_6 in: com.renesas.update.manager.repositories.messages
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2015-04-04 23:17:49.798
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\62n\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:128)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:289)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:144)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:107)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:95)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2015-04-04 23:17:49.799
+!MESSAGE C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\62n\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x not found
+!STACK 0
+java.io.FileNotFoundException: C:\_workspaces\zoe\colony.bsp.renesas.rx\tests\Bsp\Renesas\Rx\62n\Yrdkr62n\Gnurx\_0test\freertos\_target\a.x not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:128)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:289)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:144)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:107)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:95)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

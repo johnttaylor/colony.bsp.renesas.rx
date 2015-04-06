@@ -30,6 +30,7 @@
 #include "colony_config.h"
 #include "colony_map.h"
 #include "Bsp/Renesas/Rx/62n/iodefine.h"
+#include "Bsp/Renesas/Rx/62n/hal_mappings_.h"
 #include "Bsp/Renesas/Rx/62n/uarts.h"               
 #include "Bsp/Renesas/Rx/62n/Yrdkr62n/GraphicLcd.h"  // For the OKAYA 96x64 Monochromo Graphic display
 
@@ -218,14 +219,13 @@ uint8_t Bsp_isButtonPressed( uint8_t buttonIndex );
              a valid ID.
 
  */
-uint8_t BSP_uartInitPin_( uint8_t sciPortID, uint8_t pinSelect );
+uint8_t Bsp_uartInitPin_( uint8_t sciPortID, uint8_t pinSelect );
 
 
 
 //////////////////////////////////////////////////////////
-/*
-** Generic APIs
-*/
+/// Generic APIs
+//////////////////////////////////////////////////////////
 
 /// Generic API
 #define Bsp_Api_nop_MAP()                       __asm("nop")
