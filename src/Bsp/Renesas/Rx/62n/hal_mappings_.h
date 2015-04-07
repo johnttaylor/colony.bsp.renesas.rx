@@ -32,7 +32,7 @@
 ///
 #define Cpl_Driver_Uart_Hal_transmitByte_MAP        Bsp_uartTransmitByte
 ///
-#define Cpl_Driver_Uart_Hal_clrTxIrq_MAP            Bsp_uartClrTxDataEmptyFlag
+#define Cpl_Driver_Uart_Hal_clrTxIrq_MAP(h)         // Empty because entering the ISR clears the IRQ request flag
 ///
 #define Cpl_Driver_Uart_Hal_enableTx_MAP            Bsp_uartEnableRX_TX     // Enable BOTH because that is the way the chip works!
 ///
@@ -44,7 +44,7 @@
 ///
 #define Cpl_Driver_Uart_Hal_isTxIrqEnabled_MAP      Bsp_uartIsTXDataIrqEnabled
 ///
-#define Cpl_Driver_Uart_Hal_isTxIrq_MAP             Bsp_uartIsTxDoneIrqEnabled
+#define Cpl_Driver_Uart_Hal_isTxIrq_MAP             Bsp_uartIsTxDataEmpty
 ///
 #define Cpl_Driver_Uart_Hal_isTxPipeEmpty_MAP       Bsp_uartIsTxDataEmpty
 ///
@@ -54,7 +54,7 @@
 ///
 #define Cpl_Driver_Uart_Hal_getRxByte_MAP           Bsp_uartGetReceivedByte
 ///
-#define Cpl_Driver_Uart_Hal_clrRxIrq_MAP            Bsp_uartClrReceivedFlag
+#define Cpl_Driver_Uart_Hal_clrRxIrq_MAP(h)         // Empty because entering the ISR clears the IRQ request flag    
 ///
 #define Cpl_Driver_Uart_Hal_isRxError_MAP           Bsp_uartIsReceiveError
 ///
