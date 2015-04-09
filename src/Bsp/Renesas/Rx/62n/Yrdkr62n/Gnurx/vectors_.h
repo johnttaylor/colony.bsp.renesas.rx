@@ -79,7 +79,7 @@ extern void BSP_VECTOR_ERROR_TRAP(void)  __attribute__ ((interrupt));
 
 // END C++
 #ifdef __cplusplus
-}
+};
 #endif
 
 

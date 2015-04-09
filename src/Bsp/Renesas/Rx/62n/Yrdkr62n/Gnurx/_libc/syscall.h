@@ -51,7 +51,7 @@ void bsp_libfake_fatalerror( int n );
 
 
 #ifdef __cplusplus
-}
+};
 #endif
 
 #endif  // end header latch

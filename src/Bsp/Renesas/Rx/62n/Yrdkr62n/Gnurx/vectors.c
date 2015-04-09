@@ -33,11 +33,13 @@ typedef void (*fp) (void);
 #ifdef __cplusplus
 extern "C" {    
 #endif
+
 extern const fp HardwareVectors[];
 extern const fp RelocatableVectors[];
+
 // End C++
 #ifdef __cplusplus
-}
+};
 #endif
 
 ///////////////////////////////////////////

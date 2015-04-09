@@ -28,7 +28,6 @@
 
 #include <stdint.h>
 #include "colony_config.h"
-#include "colony_map.h"
 #include "Bsp/Renesas/Rx/62n/iodefine.h"
 #include "Bsp/Renesas/Rx/62n/hal_mappings_.h"
 #include "Bsp/Renesas/Rx/62n/uarts.h"               
@@ -279,6 +278,6 @@ uint8_t Bsp_uartInitPin_( uint8_t sciPortID, uint8_t pinSelect );
 
 // END C++
 #ifdef __cplusplus
-}
+};
 #endif
 #endif  // end header latch

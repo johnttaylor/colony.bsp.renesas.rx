@@ -27,6 +27,7 @@
 
 
 #include "Bsp/Api.h"
+#include <stdint.h>
 
 
 // Start C++
@@ -460,6 +461,6 @@ void Bsp_uartBusyWait( unsigned long delay );
 
 // END C++
 #ifdef __cplusplus
-}
+};
 #endif
 #endif  // end header latch

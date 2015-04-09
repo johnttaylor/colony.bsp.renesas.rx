@@ -15,10 +15,13 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 extern void Bsp_hardwareSetup_(void);
+
 #ifdef __cplusplus
-}
+};
 #endif
+///////////////////////////////////////////
 
 /** This method is called as part of the C/C++ runtime initialization, i.e.
     it is called BEFORE main() is entered!  

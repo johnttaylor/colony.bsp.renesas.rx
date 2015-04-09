@@ -177,6 +177,6 @@ extern const uint8_t * const Bsp_GLcd_FontTable_5x7[256];
 
 // END C++
 #ifdef __cplusplus
-}
+};
 #endif
 #endif  // end header latch
