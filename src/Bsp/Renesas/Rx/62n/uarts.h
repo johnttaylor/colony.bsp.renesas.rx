@@ -260,7 +260,7 @@ extern "C" {
 
 
 
-/*------------------ UART-A (SCI3) -------------------------------------*/
+/*------------------ PUBLIC API -----------------------------------------*/
 /** This method provides a general purpose intialization routine
     for the board's UART.  
     
