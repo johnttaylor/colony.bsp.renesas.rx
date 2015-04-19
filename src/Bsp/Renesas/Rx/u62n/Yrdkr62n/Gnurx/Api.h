@@ -28,11 +28,11 @@
 
 #include <stdint.h>
 #include "colony_config.h"
-#include "Bsp/Renesas/Rx/62n/iodefine.h"
-#include "Bsp/Renesas/Rx/62n/hal_mappings_.h"
-#include "Bsp/Renesas/Rx/62n/uarts.h"               
-#include "Bsp/Renesas/Rx/62n/cmp_timers.h"               
-#include "Bsp/Renesas/Rx/62n/Yrdkr62n/GraphicLcd.h"  // For the OKAYA 96x64 Monochromo Graphic display
+#include "Bsp/Renesas/Rx/u62n/iodefine.h"
+#include "Bsp/Renesas/Rx/u62n/hal_mappings_.h"
+#include "Bsp/Renesas/Rx/u62n/uarts.h"               
+#include "Bsp/Renesas/Rx/u62n/cmp_timers.h"               
+#include "Bsp/Renesas/Rx/u62n/Yrdkr62n/GraphicLcd.h"  // For the OKAYA 96x64 Monochromo Graphic display
 
 
 // Start C++

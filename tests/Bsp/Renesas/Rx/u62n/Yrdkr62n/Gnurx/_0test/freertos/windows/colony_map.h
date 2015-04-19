@@ -38,7 +38,7 @@ extern void vSoftwareInterruptISR( void ); // __attribute__ ((interrupt));
 /////////////////////////
 
 /// My BSP
-#include "Bsp/Renesas/Rx/62n/Yrdkr62n/Gnurx/Api.h"
+#include "Bsp/Renesas/Rx/u62n/Yrdkr62n/Gnurx/Api.h"
 
 
 /// strapi mapping

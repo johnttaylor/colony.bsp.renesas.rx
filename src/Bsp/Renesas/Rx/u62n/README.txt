@@ -1,5 +1,5 @@
 /** @file */
-/** @namespace Bsp::Renesas::Rx::62n
+/** @namespace Bsp::Renesas::Rx::u62n
 @htmlonly
 <pre>    
 
