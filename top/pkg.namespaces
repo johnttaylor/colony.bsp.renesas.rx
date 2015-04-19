@@ -1,2 +1,4 @@
-Bsp::Renesas::Rx::Yrdkr62n
-Bsp::Renesas::Rx::Yrdkr62n::Gnurx
+Bsp::Renesas::Rx
+Bsp::Renesas::Rx::u62n
+Bsp::Renesas::Rx::u62n::Yrdkr62n
+Bsp::Renesas::Rx::u62n::Yrdkr62n::Gnurx

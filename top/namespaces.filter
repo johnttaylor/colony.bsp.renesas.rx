@@ -1,3 +1,6 @@
+# I own the Bsp::Renesas:Rx namespace (but there are not files in -->so force it to be included)
+I:Bsp::Renesas::Rx
+
 # Skip directories that start with a leading underscore
 D:_*
 
