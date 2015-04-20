@@ -13,8 +13,8 @@ url = www.integerfox.com/colony.bsp.renesas.rx
 colony.core\\1.1.0
 
 [weak_deps]
-freertos\\8.2.0
 nqbp\\1.1.0
+freertos\\8.2.1
 
 [transitive_deps]
 
