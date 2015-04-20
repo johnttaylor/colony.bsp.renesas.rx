@@ -29,3 +29,7 @@
 
 # e2studio junk
 .metadata
+
+# more stuff
+make.log
+*.lst
