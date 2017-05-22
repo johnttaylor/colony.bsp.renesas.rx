@@ -146,7 +146,7 @@ uint8_t Bsp_isButtonPressed( uint8_t buttonIndex );
 
 
     @param sciPortID        UART/SCI Port ID (must be one of BSP_ID_SERIAL_PORTx)
-    @param pinSelect        Pin select, i.e. Pin configuraiton 'A' vs 'B'.  Note: On SCI2 has the option of A/B on the 100LQP part
+    @param pinSelect        Pin select, i.e. Pin configuration 'A' vs 'B'.  Note: On SCI2 has the option of A/B on the 100LQP part
 
     @returns 1 if successful; else 0 is returned. Note: The error 
              checking is VERY LIMITED, i.e. it only checks if 'sciPortID' is
