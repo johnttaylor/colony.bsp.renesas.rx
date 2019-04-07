@@ -206,7 +206,7 @@ extern "C" {
  
                                                                                                              
 /* 
-** PRIVATE Serial mode register (SMR) bit values 
+** COMPONENT Scoped Serial mode register (SMR) bit values 
 */                                                                  
 /// SMR bit position
 #define BSP_SMR_PAR_ENABLE_                 0x20                                                          
@@ -265,7 +265,7 @@ extern "C" {
     for the board's UART.  
     
     @param sciPortID        UART/SCI Port ID (must be one of BSP_ID_SERIAL_PORTx)
-    @param pinSelect        Pin select, i.e. Pin configuraiton 'A' vs 'B'.  Not all pin configuraiton options are available on all packages of the microcontroller
+    @param pinSelect        Pin select, i.e. Pin configuration 'A' vs 'B'.  Not all pin configuration options are available on all packages of the microcontroller
     @param baudrate         BRR value
     @param baudrateDivider  PCLK divider/prescaler. 0= PCLK, 1=PCLK/4, 2=PCLK/16, 3=PCLK/11
     @param irqPriority      Interrupt Priority. 1=lowest, ... 15=highest

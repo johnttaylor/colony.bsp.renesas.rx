@@ -140,7 +140,7 @@ uint8_t Bsp_isButtonPressed( uint8_t buttonIndex );
 
 /** Pin configuration method.
    
-    NOTE: This is a PRIVATE METHOD that is called by the generic 'uarts' 
+    NOTE: This is a COMPONENT Scoped METHOD that is called by the generic 'uarts' 
           initialization routine.  The app should NEVER call this method
           directly.
 
