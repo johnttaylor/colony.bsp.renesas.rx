@@ -33,3 +33,4 @@
 # more stuff
 make.log
 *.lst
+__pycache__
